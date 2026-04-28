@@ -52,7 +52,7 @@ Notes: LLVM development headers and libraries are required to build; install LLV
 - `include/comlang/Parser.h` — parser for expressions and function prototypes.
 - `include/comlang/CodeGen.h` — code generation interface to produce LLVM IR.
 - `include/comlang/KaleidoscopeJIT.h` — lightweight ORC JIT wrapper used by examples.
-- `src/comlang/toy.cpp` — example runner demonstrating parse -> codegen -> JIT execution.
+- `src/comlang/main.cpp` — example runner demonstrating parse -> codegen -> JIT execution.
 
 ## Testing and Extending
 
