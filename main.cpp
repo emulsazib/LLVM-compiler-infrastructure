@@ -7,7 +7,7 @@ extern "C" {
 }
 
 int main() {
-    double result = average(10.0, 20.0);
-    std::cout << "The average of 10 and 20 is: " << result << std::endl;
+    double result = average(20.0, 20.0);
+    std::cout << "The average is: " << result << std::endl;
     return 0;
 }
