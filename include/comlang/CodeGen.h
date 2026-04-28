@@ -1,4 +1,5 @@
 #pragma once
+#include "Core.h"
 #include "Parser.h"
 //===----------------------------------------------------------------------===//
 // Code Generation Globals
@@ -18,6 +19,15 @@ static std::map<std::string, std::unique_ptr<PrototypeAST>> FunctionProtos;
 //===----------------------------------------------------------------------===//
 
 static std::unique_ptr<DIBuilder> DBuilder;
+
+struct DebugInfo {
+  DICompileUnit *TheCU;
+  DIType *DblTy;
+  std::vector<DIScope *> LexicalBlocks;
+
+  void emitLocation(ExprAST *AST);
+  DIType *getDoubleTy();
+} KSDbgInfo;
 
 DIType *DebugInfo::getDoubleTy() {
   if (DblTy)

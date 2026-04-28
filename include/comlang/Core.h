@@ -13,6 +13,7 @@
 #include "llvm/Support/TargetSelect.h"
 #include "llvm/TargetParser/Host.h"
 #include "llvm/Transforms/Scalar.h"
+#include "llvm/MC/TargetRegistry.h"
 #include <cctype>
 #include <cstdio>
 #include <map>
